@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ascendant Calculator</title>
+</head>
+<body>
+    <h1>Calcul de l'Ascendant</h1>
+    <form method="post">
+        Prénom : <input type="text" name="prenom"><br>
+        Nom : <input type="text" name="nom"><br>
+        Ville de naissance : <input type="text" name="ville"><br>
+        Date de naissance : <input type="date" name="date_naissance"><br>
+        Heure de naissance : <input type="time" name="heure_naissance"><br>
+        Nom d'utilisateur GeoNames : <input type="text" name="username"><br>
+        <button type="submit">Calculer</button>
+    </form>
+
+    {% if result %}
+        <h2>Résultat</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
